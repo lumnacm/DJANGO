@@ -13,7 +13,7 @@ background-size: cover;
 font-family: sans-serif;  
 }  
 header {  
-background-color:#f0c2e0;  
+background-color: pink;  
 position: fixed;  
 left: 0;  
 right: 0;  
@@ -42,20 +42,15 @@ text-decoration: none;
 <nav>  
 <ul>  
 <li>  
-<a href="{% url "home" %}"> Home </a>  
-</li>  
-{% comment %} <li>  
-<a href="{% url "about" %}"> About </a>  
-</li>  
-<li>  
+
+ <li>  
 <a href="{% url "department" %}"> Department </a>  
-</li>   {% endcomment %}
+</li>  
+<li>
 <li>  
-    <a href="{% url "registration" %}"> Registration</a>  
+<a href="booking"> Booking</a>  
     </li>  
-{% comment %} <li>  
-<a href="{% url "contact" %}"> Contact Us </a>  
-</li>   {% endcomment %}
+
 </ul>  
 </nav>  
 </header>  {%block content%} {%endblock%}

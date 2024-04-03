@@ -1,0 +1,16 @@
+<h1 class="text-center"> Our Departments</h1>
+<hr>
+
+{% for d in dept %}
+
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3 border">
+
+    <h1>{{d.dep_name}}</h1>
+    <p>{{d.dep_description}}</p>
+</div>
+{% endfor %}
+
+<table>
+    <th>dept Name</th>
+    <th>dept Description</th>
+    
